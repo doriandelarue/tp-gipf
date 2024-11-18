@@ -7,6 +7,12 @@
  * user guide available at https://docs.gradle.org/3.2.1/userguide/tutorial_java_projects.html
  */
 
+plugins {
+    id "org.sonarqube" version "5.1.0.4882"
+    id 'org.liquibase.gradle' version '2.2.0'
+}
+// Apply the java plugin to add support for Java
+apply plugin: 'java'
 
 plugins {
     id 'org.liquibase.gradle' version '2.2.0'
